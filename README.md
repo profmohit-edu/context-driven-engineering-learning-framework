@@ -4,6 +4,7 @@
 **Release Date:** 2026  
 **Author:** Mohit Tiwari  
 **License:** CC-BY 4.0  
+![Version](https://img.shields.io/badge/version-1.0-blue)
 
 ---
 

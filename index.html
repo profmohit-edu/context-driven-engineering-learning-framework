@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Interactive demonstrator for Mohit Tiwari's Context-Driven Engineering Learning Framework.">
+  <title>Context-Driven Engineering Learning Framework</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div><span class="eyebrow">BVCOE · CSE · Technology-enabled learning prototype</span><h1>Context-Driven Engineering Learning Framework</h1><p>Turn learner context into a reasoned engineering learning pathway.</p></div>
+    <div class="identity"><strong>Mohit Tiwari</strong><span>Department of Computer Science and Engineering</span><span>Bharati Vidyapeeth's College of Engineering, New Delhi</span></div>
+  </header>
+  <main>
+    <section class="intro panel">
+      <div><span class="eyebrow">Interactive implementation · Version 2.0</span><h2>Context changes the learning intervention.</h2><p>The prototype operationalizes the original five-stage cycle: context trigger, stakeholder mapping, constraint structuring, trade-off evaluation and reflective justification.</p></div>
+      <div class="cycle" aria-label="Five framework stages"><span>1 Context</span><span>2 Stakeholders</span><span>3 Constraints</span><span>4 Trade-offs</span><span>5 Reflection</span></div>
+    </section>
+    <section class="workspace">
+      <form id="context-form" class="panel">
+        <div class="form-head"><div><span class="eyebrow">Learner and engineering context</span><h2>Build a learning pathway</h2></div><div class="samples"><button id="sample-novice" type="button">Load Scenario A</button><button id="sample-advanced" type="button">Load Scenario B</button></div></div>
+        <div class="form-grid">
+          <label>Prior knowledge<select name="level" required><option value="novice">Novice — needs foundations</option><option value="intermediate">Intermediate — can apply basics</option><option value="advanced">Advanced — ready to evaluate</option></select></label>
+          <label>Engineering subject/topic<select name="topic" required><option value="embedded">Embedded Systems — sensor reliability</option><option value="structures">Data Structures — performance selection</option><option value="networks">Computer Networks — latency diagnosis</option><option value="economics">Engineering Economics — investment decision</option></select></label>
+          <label>Learning need<select name="goal" required><option value="understand">Understand a concept</option><option value="apply">Apply to a case</option><option value="troubleshoot">Troubleshoot a failure</option><option value="evaluate">Evaluate alternatives</option></select></label>
+          <label>Available time<select name="time" required><option value="20">20 minutes</option><option value="45">45 minutes</option><option value="90">90 minutes</option></select></label>
+          <label>Learning environment<select name="environment" required><option value="simulator">Simulator / browser access</option><option value="lab">Physical engineering laboratory</option></select></label>
+          <label>Collaboration context<select name="collaboration" required><option value="individual">Individual</option><option value="pair">Pair</option><option value="team">Engineering team</option></select></label>
+          <label>Current confidence<select name="confidence" required><option value="1">1 — very low</option><option value="2">2 — low</option><option value="3">3 — moderate</option><option value="4">4 — high</option><option value="5">5 — very high</option></select></label>
+        </div>
+        <button class="primary" type="submit">Process context and generate pathway</button>
+        <p class="method-note">Deterministic framework rules · No generative AI · Inputs remain in this browser</p>
+      </form>
+      <section id="output" class="panel output" aria-live="polite" hidden></section>
+    </section>
+  </main>
+  <footer class="site-footer">Context-Driven Engineering Learning Framework · Interactive demonstrator · CC BY 4.0</footer>
+  <script src="core.js"></script><script src="app.js"></script>
+</body>
+</html>

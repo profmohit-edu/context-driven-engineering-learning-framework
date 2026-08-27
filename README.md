@@ -1,93 +1,70 @@
 # Context-Driven Engineering Learning Framework
 
-**Version:** 1.0  
-**Release Date:** 2026  
+**Interactive Prototype:** 2.0  
+**Foundational Framework:** 1.0 (2026)  
 **Author:** Mohit Tiwari  
-**License:** CC-BY 4.0  
-![Version](https://img.shields.io/badge/version-1.0-blue)
+**Department:** Computer Science and Engineering, Bharati Vidyapeeth's College of Engineering, New Delhi  
+**License:** CC BY 4.0
 
----
+## Live interactive demonstrator
 
-## Overview
+The public application operationalizes the original framework as an inspectable, deterministic learning-pathway generator. A learner supplies prior knowledge, engineering topic, learning need, time, environment, collaboration mode and confidence. These inputs alter the learning activity, scaffolding, resource mode, expected evidence and reflection intervention.
 
-The Context-Driven Engineering Learning Framework is a structured pedagogical architecture designed to integrate decision-context reasoning into engineering management education.
+The application does **not** use generative AI. Recommendations are produced by documented rules in `core.js`.
 
-Version 1.0 establishes the baseline instructional architecture for contextual decision integration within undergraduate engineering programs.
+## Original five-stage architecture retained
 
----
+1. Context Trigger Activation
+2. Stakeholder Identification and Mapping
+3. Constraint Structuring
+4. Trade-off Evaluation
+5. Reflective Decision Justification
 
-## Purpose of Version 1.0
+Version 2.0 turns each stage into a visible processing trace. The original Version 1.0 repository state and static `impact.html` remain preserved; see [`docs/PROVENANCE.md`](docs/PROVENANCE.md).
 
-This release formalizes:
+## Adaptive mechanism
 
-- Context-trigger instructional activation
-- Stakeholder mapping structure
-- Constraint identification layer
-- Trade-off evaluation protocol
-- Reflective justification model
-- Outcome-Based Education alignment
+- Novice level or confidence 1–2 activates a worked example, readiness check and early checkpoint.
+- Advanced level with confidence 4–5 removes the worked example and activates assumption challenge, stakeholder objection and peer critique.
+- Learning need selects concept construction, worked-to-independent application, diagnostic fault isolation, or multi-criteria trade-off evaluation.
+- Simulator versus physical lab selects a materially different resource/activity environment.
+- Available time changes the required evidence from a decision snapshot to a documented technical deliverable with validation and peer response.
+- Collaboration mode assigns individual, pair or engineering-team roles.
+- Subject selection changes domain resources, engineering concepts and deliverables.
 
-This version serves as the foundational implementation specification.
+## Reproducible scenarios
 
----
+### Scenario A — scaffolded diagnostic pathway
 
-## Core Instructional Architecture
+- Novice; Embedded Systems; Troubleshoot; 20 minutes; Simulator; Individual; confidence 1.
+- Produces a guided concept primer, readiness checkpoint, simulated fault-isolation activity and annotated decision snapshot.
 
-The framework operates through a five-stage cycle:
+### Scenario B — advanced evaluation pathway
 
-1. Context Trigger Activation  
-2. Stakeholder Identification and Mapping  
-3. Constraint Structuring  
-4. Trade-off Evaluation  
-5. Reflective Decision Justification  
+- Advanced; Embedded Systems; Evaluate; 90 minutes; Physical lab; Engineering team; confidence 5.
+- Produces an open-ended challenge, stakeholder/team roles, physical bench investigation, alternative comparison, peer challenge and evidence-backed defense.
 
-Each stage is modular and adaptable across management-oriented engineering courses.
+Use the two sample buttons in the application to reproduce these outputs.
 
----
+## Run locally
 
-## Implementation Scope
+Open `index.html` in a browser. No build step, backend, API key or user data store is required.
 
-Version 1.0 is applicable to:
+## Tests
 
-- Principles of Management for Engineers (PME)
-- Engineering Management Modules
-- Capstone Project Reflection Integration
-- Techno-Managerial Case Discussions
+Requires Node.js 20 or newer:
 
-The framework enhances instructional depth without altering existing syllabus structures.
+```bash
+npm test
+```
 
----
+Tests cover validation, all five stages, novice scaffolding, advanced challenge mode, topic-specific resources and materially different output for contrasting contexts.
 
-## Assessment Alignment
+## Original framework purpose
 
-The framework aligns with:
-
-- Outcome-Based Education (OBE)
-- Structured rubric evaluation
-- Applied reasoning metrics
-- Stakeholder-sensitive decision analysis
-
----
-
-## Version Declaration
-
-This is the first structured public release of the Context-Driven Engineering Learning Framework.
-
-Future releases may include:
-
-- Empirical validation studies
-- Cross-institutional implementation data
-- Extended case libraries
-- Digital tool integrations
-
----
+The framework integrates decision-context reasoning into engineering management education while supporting stakeholder mapping, constraint identification, trade-off evaluation, reflective justification and Outcome-Based Education alignment. It is applicable to Principles of Management for Engineers, engineering-management modules, capstone reflection and techno-managerial case discussions.
 
 ## Citation
 
-Tiwari, M. (2026). *Context-Driven Engineering Learning Framework (Version 1.0).* 
-
----
-
-## License
-
-This framework is released under the Creative Commons Attribution 4.0 International License (CC-BY 4.0).
+Tiwari, M. (2026). *Context-Driven Engineering Learning Framework (Version 1.0).*  
+Interactive demonstrator Version 2.0, current repository release.
